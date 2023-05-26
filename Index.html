@@ -1,0 +1,486 @@
+<html>
+<head>
+  <title>MK Cards</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="homestyles.css">
+
+</head>
+<body>
+<!--CSS For boxes fade effect-->
+<style>
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+section:nth-child(1) {
+  color: #e0ffff;
+}
+
+section:nth-child(2) {
+  color: #42455a;
+  background: #e0ffff;
+}
+
+section:nth-child(3) {
+  color: #e0ffff;
+}
+
+section:nth-child(4) {
+  color: #d3aa65;
+  background: #020a0f;
+}
+
+section .container {
+  margin: 100px;
+}
+
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section .text-container {
+  display: flex;
+}
+
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #151821;
+}
+
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+</style>
+</body>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">MK Cards</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">GRADED CARDS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SHOP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACTS</a>
+      </li> 	  
+    </ul>
+  </div>  
+</nav>
+<br>
+</body>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div id="carosello" class="carousel slide" data-ride="carousel" data-interval=2000>
+
+        <ol class="carousel-indicators">
+          <li data-target="#carosello" data-slide-to="0" class="active"></li>
+          <li data-target="#carosello" data-slide-to="1"></li>
+          <li data-target="#carosello" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/slide1.png" alt="prima slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Prima Slide</h5>
+              <p>Didascalia prima slide</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/ss4.jpg" alt="seconda slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seconda Slide</h5>
+              <p>Didascalia seconda slide</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/ss2.jpg" alt="terza slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Terza Slide</h5>
+              <p>Didascalia terza slide</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carosello" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carosello" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<br>
+
+<div class="container">
+
+<!-- Card deck -->
+<div class="card-deck row">
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">1 Card title</h4>
+      <!--Text-->
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">2 Card title</h4>
+      <!--Text-->
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">3 Card title</h4>
+      <!--Text-->
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div> 
+</div>
+<!-- Card deck -->
+  
+</div>
+
+ <!-- section class used for javascript, this container will add fading effects, it also has some text boxes in it. -->
+<section>
+  <div class="container reveal fade-left">
+    <h2>Pokemon Gold Star Single Cards</h2>
+    <div class="text-container">
+      <div class="text-box">
+        <h3>Gold Stars</h3>
+        <p>
+          Take a look at our selection of gold star Pokemon cards. We have multiple 
+		  different gold star cards in stock with express delivery to your doorstep! 
+		  MK Cards is the largest e-commerce store in the nation with gold star 
+		  pokemon cards available to purchase in Near Mint condition! 
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Delivery</h3>
+        <p>
+          When placing an order via our order form please include which type of delivery will suit you the best! 
+		  If you would like to collect the cards from our deansgate showroom you can! 
+		  If you want delivery you can select between standard delivery via DHL 
+		  or express delivery to your doorstep!
+        </p>
+      </div>
+      <div class="text-box">
+        <h3>Conditions</h3>
+        <p>
+          We try to sell only Near Mint cards or cards fresh from booster packs.
+		 But unfortunately sometimes it is very difficult to obtain such
+		 rare cards from 15+ years ago in good condition
+		 hence why sometimes you will see discounts on our website which will
+		 always state the condition of the cards.
+
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- js code for the fading of the three boxes when scrolling -->
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+//on scroll the effects will activate
+window.addEventListener("scroll", reveal);
+</script>
+
+<div class="container my-5" id="abouttextstyle">
+   <div class="row">
+     <div class="col-md-6 p-4 p-sm-5 order-2 order-sm-1">
+       <small class="text-uppercase"></small>
+       <h1 class="h2 mb-4" style="font-weight: 600;">Our Mission</span></h1>
+       <p class="text-secondary" style="line-height: 2;">Catering to the individualistic needs of each student.<br>
+		High quality learning experience based on a broad and balanced curriculum.
+		To empower students utilise their full potential spiritually, intellectually, physically, socially and morally.
+</p>
+       
+     </div>
+     <div class="col-md-6 p-0 text-center order-1 order-sm-2">
+        <img src="https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="w-100" alt="">
+     </div>
+
+    <div class="col-md-6 p-0 text-center">
+       <img src="https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="w-100" alt="">
+    </div>
+    <div class="col-md-6 p-4 p-sm-5">
+      <small class="text-uppercase"></small>
+      <h1 class="h2 mb-4" style="font-weight: 600;">About us</span></h1>
+      <p class="text-secondary" style="line-height: 2;">Maria Auxilium Girls’ Hr. Sec. School is situated at 15G Damalwar Street, Kancheepuram. It is set in a
+		conducive atmosphere suitable for the growth of young minds. At Maria Auxilium School every child is given
+		individual attention to ensure their holistic development. At MAS , all the needs of the child are met with understanding and utmost care, be it physical, emotional, intellectual or spiritual.</p>
+      
+    </div>
+   </div>
+ </div>
+ 
+
+<footer>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6">
+        <h3>Site Map</h3>
+        <ul class="list-unstyled three-column">
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Code</li>
+          <li>Design</li>
+          <li>Host</li>
+          <li>Contact</li>
+          <li>Company</li>
+        </ul>
+        <ul class="list-unstyled socila-list">
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <h3>latest Articles</h3>
+        <div class="media">
+          <a href="#" class="pull-left">
+            <img src="http://placehold.it/64x64" alt="" class="media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Programming</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        
+        <div class="media">
+          <a href="#" class="pull-left">
+            <img src="http://placehold.it/64x64" alt="" class="media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Coding</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        
+        <div class="media">
+          <a href="#" class="pull-left">
+            <img src="http://placehold.it/64x64" alt="" class="media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Web Sesign</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-lg-4">
+        <h3>Our Work</h3>
+        <img class="img-thumbnail" src="http://placehold.it/150x100" alt="" />
+        <img class="img-thumbnail" src="http://placehold.it/150x100" alt="" />
+        <img class="img-thumbnail" src="http://placehold.it/150x100" alt="" />
+        <img class="img-thumbnail" src="http://placehold.it/150x100" alt="" />
+      </div>
+      
+    </div>
+  </div>
+  <div class="copyright text-center">
+    Copyright &copy; 2017 <span>Your Template Name</span>
+  </div>
+</footer>
+</html>
