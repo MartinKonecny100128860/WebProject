@@ -28,69 +28,91 @@ body{
 body {color: #d3aa65 
 }
 
-/* Footer section */	
-footer {
-  background: #222;
-  color: #aaa;
-  padding-top: 10px;
-}
-
-footer a {
-  color: #aaa;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
-footer h3 {
- color: #0894d1;
-  letter-spacing: 1px;
-  margin: 30px 0 20px;
-}
-
-footer .three-column {
- overflow: hidden;
-}
-
-footer .three-column li{
- width: 33.3333%;
-  float: left;
-  padding: 5px 0;
-}
-
-footer .socila-list {
-  overflow: hidden;
-  margin: 20px 0 10px;
-}
-
-footer .socila-list li {
-  float: left;
-  margin-right: 3px;
-  opacity: 0.7;
-  overflow: hidden;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-}
-
-footer .socila-list li:hover {
-  opacity: 1;
-}
-
-footer .img-thumbnail {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #444;
-  margin-bottom: 5px;
-}
-
-footer .copyright {
-  padding: 15px 0;
-  background: #333;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-footer .copyright span {
-  color: #0894d1;
-}
-/* End of Footer section */
+* {
+  box-sizing: border-box;
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+  }
+  
+  .logo {
+  font-size: 20px;
+  margin: 10px;
+  }
+  .logo a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  }
+  .navbar-links ul {
+  margin: 0px 10px;
+  padding: 0px;
+  display: flex;
+  }
+  .navbar-links ul li {
+  list-style: none;
+  }
+  .navbar-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px;
+  display: block;
+  }
+  .navbar-links ul li a:hover {
+  background: #ffffff;
+  color: #000000;
+  }
+  .togglebtn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  }
+  .line {
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .togglebtn {
+  display: flex;
+  }
+  .navbar-links {
+  display: none;
+  width: 100%;
+  }
+  .navbar {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  .navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+  }
+  .navbar-links ul li {
+  text-align: center;
+  }
+  .navbar-links ul li a {
+  padding: 16px;
+  }
+  .navbar-links.active {
+  display: flex;
+  }
+  }
+  
