@@ -3,6 +3,7 @@
     <title>MK Cards</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NXrxh4V4iguh8bchb7CHHQojnbMmQ/lCgOWftVGvchLz9m9CmVXaFELAJyoKr7gQ5Cq0WjV7AA/xPW5W/zB6wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -211,4 +212,190 @@
       </div>
     </div>
   </div>
+  <section class="blog-section">
+
+  </section>
+  
+  <section class="review-section">
+    <div class="review-container">
+      <div class="image-box">
+        <h3>Customer Review 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor elit in lorem feugiat dictum.</p>
+      </div>
+      <div class="review-box">
+        <div class="review-background">
+          <h3>Customer Review 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor elit in lorem feugiat dictum.</p>
+          <p class="review-timestamp">Posted 1 day ago</p>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-background">
+          <h3>Customer Review 2</h3>
+          <p>Ut eleifend lectus nec orci dictum aliquet. Donec auctor varius neque, a dapibus risus vulputate non.</p>
+          <p class="review-timestamp">Posted 2 days ago</p>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="review-background">
+          <h3>Customer Review 3</h3>
+          <p>Mauris sit amet commodo turpis. Suspendisse a eros sed sem tincidunt vestibulum vel nec tellus.</p>
+          <p class="review-timestamp">Posted 3 days ago</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Updated: Align items to the top */
+  background-image: url(https://i.imgur.com/6R0Q1DU.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.image-box {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #ff04c9;
+  margin-right: 20px; /* Added margin-right to create space between image box and review box */
+}
+
+.review-box {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  box-shadow: 0 0 0 3px #ff04c9, 0 0 0 1px rgba(0, 0, 0, 0.1); /* Updated box-shadow */
+  overflow: hidden; /* Added overflow property to hide the corners */
+}
+
+.review-background {
+  background-image: url(https://i.imgur.com/CN5pDKL.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.review-box h3 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.review-box p {
+  color: #666666;
+}
+
+
+.review-box .review-stars {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .review-box .review-timestamp {
+      color: #666666;
+      font-size: 12px;
+    }
+
+@media (min-width: 768px) {
+  .review-box {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+  </style>
+
+<head>
+  <style>
+    .footer {
+  background-image: url("https://i.imgur.com/6XEXYZ3.jpeg");
+  background-size: cover;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section {
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.footer-address {
+  color: #ffffff;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-images img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+  </style>
+</head>
+<body>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">MK CARDS</h3>
+        <img class="footer-logo" src="https://i.pinimg.com/originals/c7/d7/02/c7d70249300e5473a14ded83c694d242.png" alt="MK CARDS Logo">
+      </div>
+      <div class="footer-section">
+        <p class="footer-address">123 Main Street, City, Country</p>
+        <p class="footer-address">info@example.com</p>
+        <p class="footer-address">Phone: 123-456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">Socials</h3>
+        <div class="footer-images">
+          <img src="https://media.istockphoto.com/id/1139020309/vector/bitcoin-internet-money-icon-vector.jpg?s=612x612&w=0&k=20&c=vcRUEDzhndMOctdM7PN1qmipo5rY_aOByWFW0IkW8bs=" alt="Social Icon 1">
+          <img src="https://media.istockphoto.com/id/1139020309/vector/bitcoin-internet-money-icon-vector.jpg?s=612x612&w=0&k=20&c=vcRUEDzhndMOctdM7PN1qmipo5rY_aOByWFW0IkW8bs=" alt="Social Icon 2">
+          <img src="https://media.istockphoto.com/id/1139020309/vector/bitcoin-internet-money-icon-vector.jpg?s=612x612&w=0&k=20&c=vcRUEDzhndMOctdM7PN1qmipo5rY_aOByWFW0IkW8bs=" alt="Social Icon 3">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<head>
+  <!-- Other head elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Additional styling and CSS -->
+</head>  
+
 </html>
