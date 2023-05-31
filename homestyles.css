@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("https://i.imgur.com/6XEXYZ3.jpeg");
+  background-color: #000000;
   color: #ffffff;
   position: fixed;
   top: 0;
