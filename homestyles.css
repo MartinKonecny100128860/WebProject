@@ -37,6 +37,7 @@ body {
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 17px;
+  padding-top: 56px;
   }
   .navbar {
   display: flex;
@@ -44,10 +45,16 @@ body {
   align-items: center;
   background-image: url("https://i.imgur.com/6XEXYZ3.jpeg");
   color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 10px 20px;
   }
   
   .logo {
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px;
   }
   .logo a {
@@ -66,7 +73,7 @@ body {
   .navbar-links ul li a {
   text-decoration: none;
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
   display: block;
   }
   .navbar-links ul li a:hover {
@@ -115,5 +122,26 @@ body {
   .navbar-links.active {
   display: flex;
   }
+  }
+  
+  .cart {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Move the cart to the right */
+    margin-right: 20px; /* Adjust the margin as desired */
+  }
+  
+  .cart-icon {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .cart-count {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-left: 5px;
   }
   
