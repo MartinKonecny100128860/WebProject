@@ -322,7 +322,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 0, 128, 0.7);
+    background-color: rgba(128, 0, 128, 0.4); /* Adjust the opacity here */
     opacity: 0;
     transition: opacity 0.3s;
   }
@@ -342,110 +342,107 @@
     text-align: center;
   }
   
-  </style>
+</style>
 
   <br>
 
   <div class="full-width-section">
     <div class="background-image"></div>
     <div class="content-container">
-      <div class="box">
+      <div class="box left-box">
         <h2>Come and Visit Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ante vel mauris tristique malesuada.</p>
         <p>Integer eu feugiat lorem, a pellentesque nisi. Donec hendrerit elit nec fringilla dignissim.</p>
         <button class="btn">Find Out More</button>
       </div>
-      <div class="box">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94991.3340758525!2d-2.2405360000000005!3d53.83460725000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b90dc6eab89b5%3A0x8432c412cfa52dd4!2sNelson%2C%20UK!5e0!3m2!1sen!2suk!4v1626142674469!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="box right-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94991.3340758525!2d-2.2405360000000005!3d53.83460725000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b90dc6eab89b5%3A0x8432c412cfa52dd4!2sNelson%2C%20UK!5e0!3m2!1sen!2suk!4v1626142674469!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </div>
   
   <style>
-  .full-width-section {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Adjust the height as desired */
-    overflow: hidden;
-  }
+    .full-width-section {
+      position: relative;
+      width: 100%;
+      height: 500px; /* Adjust the height as desired */
+      overflow: hidden;
+    }
   
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/007/152/272/original/white-ornament-islamic-pattern-background-free-vector.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8; /* Adjust the opacity as desired */
-  }
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://static.vecteezy.com/system/resources/previews/007/152/272/original/white-ornament-islamic-pattern-background-free-vector.jpg");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8; /* Adjust the opacity as desired */
+    }
   
-  .content-container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+    .content-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-wrap: wrap; /* Wrap the boxes on smaller screens */
+    }
   
-  .box {
-    width: 100%;
-    max-width: 400px; /* Adjust the max-width as desired */
-    text-align: center;
-    margin-bottom: 20px; /* Adjust the margin as desired */
-    padding: 0 20px;
-  }
-  
-  .box img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  h2 {
-    font-size: 24px; /* Adjust the font size as desired */
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    background-color: #4caf50; /* Adjust the button color as desired */
-    color: #fff; /* Adjust the button text color as desired */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #45a049; /* Adjust the button hover color as desired */
-  }
-  
-  @media (min-width: 768px) {
     .box {
       width: 45%; /* Adjust the width as desired */
-      margin: 0 10px;
+      text-align: center;
+      margin-bottom: 20px; /* Adjust the margin as desired */
     }
-  }
   
-  @media (max-width: 480px) {
-    .full-width-section {
+    .left-box {
+      margin-right: 20px; /* Adjust the right margin as desired */
+    }
+  
+    .right-box {
+      margin-left: 20px; /* Adjust the left margin as desired */
+    }
+  
+    .box img {
+      max-width: 100%;
       height: auto;
     }
-    
-    .background-image {
-      height: 250px; /* Adjust the height as desired */
+  
+    h2 {
+      font-size: 24px; /* Adjust the font size as desired */
     }
-    
-    .box {
-      max-width: none;
-      margin: 10px 0;
+  
+    p {
+      margin-bottom: 10px;
     }
-  }
+  
+    .btn {
+      padding: 10px 20px;
+      background-color: #4caf50; /* Adjust the button color as desired */
+      color: #fff; /* Adjust the button text color as desired */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .btn:hover {
+      background-color: #45a049; /* Adjust the button hover color as desired */
+    }
+  
+    @media (max-width: 768px) {
+      .box {
+        width: 100%; /* Make the boxes full width on smaller screens */
+        margin: 10px 0; /* Adjust the margin as desired */
+      }
+  
+      .left-box,
+      .right-box {
+        margin-right: 0; /* Remove the margin on smaller screens */
+        margin-left: 0; /* Remove the margin on smaller screens */
+      }
+    }
   </style>
 
 
