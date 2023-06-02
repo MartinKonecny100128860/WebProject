@@ -110,14 +110,11 @@
   <br>
 
   <div class="container">
-
     <!-- Card deck -->
     <div class="card-deck row">
-  
       <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
         <!-- Card -->
         <div class="card">
-  
           <!--Card image-->
           <div class="view overlay">
             <img class="card-img-top" src="Images/Card1.png" alt="Card image cap">
@@ -125,27 +122,21 @@
               <div class="mask rgba-white-slight"></div>
             </a>
           </div>
-  
           <!--Card content-->
           <div class="card-body">
-  
             <!--Title-->
             <h4 class="card-title">POKEMON SINGLES</h4>
             <!--Text-->
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
             <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-  
           </div>
-  
         </div>
         <!-- Card -->
       </div>
-  
       <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
         <!-- Card -->
         <div class="card mb-4">
-  
           <!--Card image-->
           <div class="view overlay">
             <img class="card-img-top" src="Images/Card2.png" alt="Card image cap">
@@ -153,27 +144,21 @@
               <div class="mask rgba-white-slight"></div>
             </a>
           </div>
-  
           <!--Card content-->
           <div class="card-body">
-  
             <!--Title-->
             <h4 class="card-title">POKEMON GRADED</h4>
             <!--Text-->
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
             <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-  
           </div>
-  
         </div>
         <!-- Card -->
       </div>
-  
       <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
         <!-- Card -->
         <div class="card mb-4">
-  
           <!--Card image-->
           <div class="view overlay">
             <img class="card-img-top" src="Images/Card3.png" alt="Card image cap">
@@ -181,25 +166,20 @@
               <div class="mask rgba-white-slight"></div>
             </a>
           </div>
-  
           <!--Card content-->
           <div class="card-body">
-  
             <!--Title-->
             <h4 class="card-title">POKEMON SEALED</h4>
             <!--Text-->
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
             <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-  
           </div>
-  
         </div>
         <!-- Card -->
-      </div> 
+      </div>
     </div>
     <!-- Card deck -->
-  
   </div>
   
   <style>
@@ -231,17 +211,24 @@
   .fade-box:nth-child(3) {
     animation-delay: 0.9s;
   }
-
+  
   .btn.btn-light-blue.btn-md {
-  width: 276px; /* Adjust the width as desired */
-  background-color: #4b0076; /* Change the background color */
-  color: white; /* Change the text color */
-  transition: background-color 0.3s ease-in-out; /* Add transition effect */
-}
-
-.btn.btn-light-blue.btn-md:hover {
-  background-color: #7a03be; /* Change the background color on hover */
-}
+    width: 100%; /* Set the button width to 100% */
+    background-color: #4b0076; /* Change the background color */
+    color: white; /* Change the text color */
+    transition: background-color 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  .btn.btn-light-blue.btn-md:hover {
+    background-color: #7a03be; /* Change the background color on hover */
+  }
+  
+  @media (max-width: 767px) {
+    .card-deck .col-md-4 {
+      flex-basis: 100%; /* Make the columns full width on small screens */
+      margin-bottom: 20px; /* Add margin between the cards */
+    }
+  }
   </style>
 
   <section class="section">
@@ -359,89 +346,107 @@
 
   <br>
 
-<div class="full-width-section">
-  <div class="background-image"></div>
-  <div class="content-container">
-    <div class="box left-box">
-      <h2>Come and Visit Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ante vel mauris tristique malesuada.</p>
-      <p>Integer eu feugiat lorem, a pellentesque nisi. Donec hendrerit elit nec fringilla dignissim.</p>
-      <button class="btn">Find Out More</button>
-    </div>
-    <div class="box right-box">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94991.3340758525!2d-2.2405360000000005!3d53.83460725000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b90dc6eab89b5%3A0x8432c412cfa52dd4!2sNelson%2C%20UK!5e0!3m2!1sen!2suk!4v1626142674469!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="full-width-section">
+    <div class="background-image"></div>
+    <div class="content-container">
+      <div class="box">
+        <h2>Come and Visit Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ante vel mauris tristique malesuada.</p>
+        <p>Integer eu feugiat lorem, a pellentesque nisi. Donec hendrerit elit nec fringilla dignissim.</p>
+        <button class="btn">Find Out More</button>
+      </div>
+      <div class="box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94991.3340758525!2d-2.2405360000000005!3d53.83460725000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b90dc6eab89b5%3A0x8432c412cfa52dd4!2sNelson%2C%20UK!5e0!3m2!1sen!2suk!4v1626142674469!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
   </div>
-</div>
-
-<style>
-.full-width-section {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Adjust the height as desired */
-  overflow: hidden;
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/007/152/272/original/white-ornament-islamic-pattern-background-free-vector.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.8; /* Adjust the opacity as desired */
-}
-
-.content-container {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.box {
-  width: 45%; /* Adjust the width as desired */
-  text-align: center;
-}
-
-.left-box {
-  margin-right: 20px; /* Adjust the right margin as desired */
-}
-
-.right-box {
-  margin-left: 20px; /* Adjust the left margin as desired */
-}
-
-.box img {
-  max-width: 100%;
-  height: auto;
-}
-
-h2 {
-  font-size: 24px; /* Adjust the font size as desired */
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-.btn {
-  padding: 10px 20px;
-  background-color: #4caf50; /* Adjust the button color as desired */
-  color: #fff; /* Adjust the button text color as desired */
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #45a049; /* Adjust the button hover color as desired */
-}
-</style>
+  
+  <style>
+  .full-width-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust the height as desired */
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/152/272/original/white-ornament-islamic-pattern-background-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Adjust the opacity as desired */
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .box {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as desired */
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin as desired */
+    padding: 0 20px;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 24px; /* Adjust the font size as desired */
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Adjust the button color as desired */
+    color: #fff; /* Adjust the button text color as desired */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049; /* Adjust the button hover color as desired */
+  }
+  
+  @media (min-width: 768px) {
+    .box {
+      width: 45%; /* Adjust the width as desired */
+      margin: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .full-width-section {
+      height: auto;
+    }
+    
+    .background-image {
+      height: 250px; /* Adjust the height as desired */
+    }
+    
+    .box {
+      max-width: none;
+      margin: 10px 0;
+    }
+  }
+  </style>
 
 
   <div class="container my-5" id="abouttextstyle">
