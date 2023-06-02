@@ -231,7 +231,7 @@
   }
   </style>
 
-  <section class="section">
+<section class="section">
   <h2 class="section-title">Section Title</h2>
   <div class="section-content">
     <p>
@@ -303,6 +303,15 @@
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .image-container.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.2s;
   }
   
   .circle-image {
@@ -325,19 +334,41 @@
   .image-container:hover .image-overlay {
     opacity: 1;
   }
+</style>
+
+<script>
+  // JavaScript to trigger the animation when the section comes into view
   
-  .image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
+  // Function to check if an element is in the viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+  
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= windowHeight &&
+      rect.right <= windowWidth
+    );
   }
   
-</style>
+  // Function to handle scroll event
+  function handleScroll() {
+    var imageContainers = document.querySelectorAll('.image-container');
+  
+    // Check if each image container is in the viewport
+    imageContainers.forEach(function (container) {
+      if (isElementInViewport(container)) {
+        container.classList.add('fade-in');
+      }
+    });
+  }
+  
+  // Attach scroll event listener
+  window.addEventListener('scroll', handleScroll);
+</script>
+
 
   <br>
 
