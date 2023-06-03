@@ -9,7 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="homestyles.css">
-
   </head>
 
   <header>
@@ -44,69 +43,69 @@
     })
   </script>
 
-  
+  <body>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome To MK Cards</h1>
+        <a href="#" class="gradient-button">SHOP SALE</a>
+      </div>
+    </section>
+  </body>
 
-<body>
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome To MK Cards</h1>
-      <a href="#" class="gradient-button">SHOP SALE</a>
-    </div>
-  </section>
-</body>
-<style>
-  .hero {
-    position: relative;
-    background-image: url("Images/HeroImg.jpg"); /* Replace with your hero image URL */
-    background-size: cover;
-    background-position: center;
-    padding: 150px 25px; /* Adjust the padding as needed */
-    text-align: center;
-    color: #ffffff;
-    opacity: 0.8; /* Adjust the opacity as needed */
-  }
-
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-    line-height: 1.2;
-  }
-
-  .gradient-button {
-    display: inline-block;
-    padding: 15px 30px;
-    margin-top: 30px;
-    background: linear-gradient(to right, #4b0076, #7a03be); /* Replace with your desired gradient colors */
-    color: #ffffff;
-    border-radius: 10px;
-    text-decoration: none;
-  }
-
-  .gradient-button:hover {
-    text-decoration: none; /* Remove underline on hover */
-    background: linear-gradient(to right, #4b0076, #7a03be); /* Keep the gradient background */
-    color: #ffffff; /* Set the font color to white */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow */
-  }
-
-  @media (max-width: 768px) {
+  <style>
     .hero {
-      padding: 60px 20px;
+      position: relative;
+      background-image: url("Images/HeroImg.jpg"); /* Replace with your hero image URL */
+      background-size: cover;
+      background-position: center;
+      padding: 150px 25px; /* Adjust the padding as needed */
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.8; /* Adjust the opacity as needed */
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .hero h1 {
-      font-size: 28px;
+      font-size: 36px;
+      line-height: 1.2;
     }
 
     .gradient-button {
-      font-size: 14px;
+      display: inline-block;
+      padding: 15px 30px;
+      margin-top: 30px;
+      background: linear-gradient(to right, #4b0076, #7a03be); /* Replace with your desired gradient colors */
+      color: #ffffff;
+      border-radius: 10px;
+      text-decoration: none;
     }
-  }
-</style>
+
+    .gradient-button:hover {
+      text-decoration: none; /* Remove underline on hover */
+      background: linear-gradient(to right, #4b0076, #7a03be); /* Keep the gradient background */
+      color: #ffffff; /* Set the font color to white */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow */
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 20px;
+      } 
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .gradient-button {
+        font-size: 14px;
+      }
+    }
+  </style>
+
   <br>
 
   <div class="container">
@@ -196,102 +195,101 @@
   </div>
   
   <style>
-  /* Existing styles */
-  
-  .fade-box {
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fade-in 1.5s ease-out forwards;
-  }
-  
-  @keyframes fade-in {
-    0% {
+      
+    .fade-box {
       opacity: 0;
       transform: translateY(50px);
+      animation: fade-in 1.5s ease-out forwards;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+  
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-  }
   
-  .fade-box:nth-child(1) {
-    animation-delay: 0.3s;
-  }
-  
-  .fade-box:nth-child(2) {
-    animation-delay: 0.6s;
-  }
-  
-  .fade-box:nth-child(3) {
-    animation-delay: 0.9s;
-  }
-  
-  .btn.btn-light-blue.btn-md {
-    width: 100%;
-    background-color: #4b0076;
-    color: white;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .btn.btn-light-blue.btn-md:hover {
-    background-color: #7a03be;
-  }
-  
-  .zoom-image {
-    overflow: hidden;
-    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  
-  .zoom-image img {
-    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  
-  .zoom-image:hover img {
-    transform: scale(1.1);
-  }
-  
-  @media (max-width: 767px) {
-    .card-deck .col-md-4 {
-      flex-basis: 100%;
-      margin-bottom: 20px;
+    .fade-box:nth-child(1) {
+      animation-delay: 0.3s;
     }
-  }
+  
+    .fade-box:nth-child(2) {
+      animation-delay: 0.6s;
+    }
+  
+    .fade-box:nth-child(3) {
+      animation-delay: 0.9s;
+    }
+  
+    .btn.btn-light-blue.btn-md {
+      width: 100%;
+      background-color: #4b0076;
+      color: white;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .btn.btn-light-blue.btn-md:hover {
+      background-color: #7a03be;
+    }
+  
+    .zoom-image {
+      overflow: hidden;
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  
+    .zoom-image img {
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  
+    .zoom-image:hover img {
+      transform: scale(1.1);
+    }
+  
+    @media (max-width: 767px) {
+      .card-deck .col-md-4 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+    }
   </style>
 
 
 
-<section class="section">
-  <h2 class="section-title">Other TCG's</h2>
-  <div class="section-content">
-    <p>
-      <a href="#" class="btncirc ">FIND OUT MORE!</a>
-    </p>
-    <br>
-    <div class="image-grid">
-      <div class="image-container">
-        <div class="image-overlay"></div>
-        <img src="Images/PokemonLogo.jpg" alt="Image 1" class="circle-image">
+  <section class="section">
+    <h2 class="section-title">Other TCG's</h2>
+    <div class="section-content">
+      <p>
+        <a href="#" class="btncirc ">FIND OUT MORE!</a>
+      </p>
+      <br>
+      <div class="image-grid">
+        <div class="image-container">
+          <div class="image-overlay"></div>
+          <img src="Images/PokemonLogo.jpg" alt="Image 1" class="circle-image">
       </div>
-      <div class="image-container">
-        <div class="image-overlay"></div>
-        <img src="Images/Weiss.jpg" alt="Image 2" class="circle-image">
-      </div>
-      <div class="image-container">
-        <div class="image-overlay"></div>
-        <img src="Images/DigimonTCG.png" alt="Image 3" class="circle-image">
-      </div>
-      <div class="image-container">
-        <div class="image-overlay"></div>
-        <img src="Images/YuGi.jpg" alt="Image 4" class="circle-image">
-      </div>
-      <div class="image-container">
-        <div class="image-overlay"></div>
-        <img src="Images/OnePieceLogo.jpg" alt="Image 5" class="circle-image">
+        <div class="image-container">
+            <div class="image-overlay"></div>
+            <img src="Images/Weiss.jpg" alt="Image 2" class="circle-image">
+          </div>
+          <div class="image-container">
+            <div class="image-overlay"></div>
+            <img src="Images/DigimonTCG.png" alt="Image 3" class="circle-image">
+          </div>
+          <div class="image-container">
+            <div class="image-overlay"></div>
+            <img src="Images/YuGi.jpg" alt="Image 4" class="circle-image">
+          </div>
+          <div class="image-container">
+            <div class="image-overlay"></div>
+            <img src="Images/OnePieceLogo.jpg" alt="Image 5" class="circle-image">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <style>
   .section {
