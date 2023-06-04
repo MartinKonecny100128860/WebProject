@@ -1,0 +1,60 @@
+.gradient-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    background: linear-gradient(to right, #4b0076, #7a03be); /* Replace with your desired gradient colors */
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  .gradient-button:hover {
+    text-decoration: none; /* Remove underline on hover */
+    background: linear-gradient(to right, #4b0076, #7a03be); /* Keep the gradient background */
+    color: #ffffff; /* Set the font color to white */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow */
+  }
+
+  .btn.btn-light-blue.btn-md {
+    width: 100%;
+    background-color: #4b0076;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn.btn-light-blue.btn-md:hover {
+    background-color: #7a03be;
+  }
+
+  .btncirc {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #4b0076;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    border: none;
+    outline: none;
+
+  }
+  
+  .btncirc:hover {
+    background-color: #7a03be;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.8)
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: #4b0076; /* Adjust the button color as desired */
+    color: #ffffff; /* Adjust the button text color as desired */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #7a03be; /* Adjust the button hover color as desired */
+  }
