@@ -17,26 +17,71 @@
   <head>
     <style>
       /* Hero section start*/
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
       .hero {
         position: relative;
         background-image: url("Images/HeroImg.jpg"); /* Replace with your hero image URL */
         background-size: cover;
-        background-position: center;
-        padding: 150px 25px; /* Adjust the padding as needed */
-        text-align: center;
-        color: #ffffff;
-        opacity: 0.8; /* Adjust the opacity as needed */
-      }
+  background-position: center;
+  padding: 150px 25px; /* Adjust the padding as needed */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
 
-      .hero-content {
-        max-width: 800px;
-        margin: 0 auto;
-      }
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+}
 
-     .hero h1 {
-        font-size: 36px;
-        line-height: 1.2;
-      }
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: title-entrance 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes title-entrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 40px;
+  }
+}
+
+/* Fade-in effect on scroll */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
       /* Hero section finish */
 
       /* Product cards section*/
@@ -86,12 +131,15 @@
       .section {
         padding: 20px;
         text-align: center;
+        font-family: 'Oswald', sans-serif;
       }
   
       .section-title {
         font-size: 24px;
         margin-bottom: 10px;
         color: #4b0076;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
       }
   
       .section-content {
@@ -199,10 +247,13 @@
   
       h2 {
         font-size: 24px; /* Adjust the font size as desired */
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
       }
   
       p {
         margin-bottom: 10px;
+        font-family: 'Oswald', sans-serif;
       }
       /* map section finish */
 
@@ -261,11 +312,23 @@
         color: #000000;
         margin-bottom: 10px;
         font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       }
 
+      .review-box h4 {
+        color: #000000;
+        margin-bottom: 10px;
+        font-size: 14.5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
       .review-box p {
         color: #000000;
         font-size: 13.5px;
+        font-family: 'Oswald', sans-serif;
+        font-style: italic;
+        font-style: bold; 
       }
 
 
@@ -400,10 +463,27 @@
   <body>
     <section class="hero">
       <div class="hero-content">
-        <h1>Welcome To MK Cards</h1>
-        <a href="#" class="btncirc">SHOP SALE</a>
+        <h1 class="hero-title fade-in">MK CARDS</h1>
       </div>
     </section>
+    <script>
+      // Fade-in effect on scroll
+      var heroSection = document.querySelector('.hero');
+      var heroTitle = document.querySelector('.hero-title');
+  
+      window.addEventListener('scroll', fadeHeroOnScroll);
+  
+      function fadeHeroOnScroll() {
+        var scrollPosition = window.scrollY;
+        var windowHeight = window.innerHeight;
+  
+        // Calculate the opacity based on the scroll position
+        var opacity = 1 - (scrollPosition / (windowHeight * 0.8));
+  
+        heroSection.style.opacity = opacity;
+        heroTitle.style.opacity = opacity;
+      }
+    </script>
   </body>
 
   <br>
@@ -498,10 +578,10 @@
 
   <body>
     <section class="section">
-      <h2 class="section-title">Other TCG's</h2>
+      <h2 class="section-title">OTHER TCG'S</h2>
       <div class="section-content">
         <p>
-          <a href="#" class="btncirc">FIND OUT MORE!</a>
+          <a href="#" class="btncirc">EXPLORE NOW</a>
         </p>
         <br>
         <div class="image-grid">
@@ -569,7 +649,7 @@
       <div class="background-image"></div>
       <div class="content-container">
         <div class="box left-box">
-          <h2>Visit Us</h2>
+          <h2>VISIT US TODAY</h2>
           <p>Come and visit our store today and immerse yourself in the world of TCGs. </p>
           <p>Discover an extensive collection of Pokemon cards and other exciting TCG products that will ignite your passion for collecting</p>
           <button class="btncirc">Find Out More</button>
@@ -630,7 +710,8 @@
           <p>Amazing selection and great service! Found rare Pokemon cards 
             I've been searching for everywhere.
           </p>
-          <p>Tobi U.</p>
+          <br>
+          <h4>Tobi U.</h4>
           <br>
           <p class="review-timestamp">Posted 1 day ago</p>
         </div>
@@ -642,7 +723,7 @@
           <p>Highly recommend this store for TCG enthusiasts! They have a wide variety 
             of products and the staff is incredibly knowledgeable and friendly.
           </p>
-          <p> Trusted Customer</p>
+          <h4> Trusted Customer</h4>
           <br>
           <p class="review-timestamp">Posted 1 day ago</p>
         </div>
@@ -654,7 +735,8 @@
           <p>Best place to buy Pokemon cards! Their prices are competitive, and I always leave 
             with great finds for my collection.
           </p>
-          <p> Trusted Customer</p>
+          <br>
+          <h4> Trusted Customer</h4>
           <br>
           <p class="review-timestamp">Posted 1 day ago</p>
         </div>
