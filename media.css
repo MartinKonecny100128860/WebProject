@@ -1,0 +1,42 @@
+    /* media querie for hero section*/ 
+    @media (max-width: 768px) {
+        .hero {
+          padding: 60px 20px;
+        } 
+  
+        .hero h1 {
+          font-size: 28px;
+        }
+  
+        .btncirc {
+          font-size: 14px;
+        }
+    }
+    /* media querie ofr product cards*/ 
+    @media (max-width: 767px) {
+        .card-deck .col-md-4 {
+          flex-basis: 100%;
+          margin-bottom: 20px;
+        }
+    }
+    /* media querie map section*/
+    @media (max-width: 768px) {
+        .box {
+          width: 100%; /* Make the boxes full width on smaller screens */
+          margin: 10px 0; /* Adjust the margin as desired */
+        }
+    
+        .left-box,
+        .right-box {
+          margin-right: 0; /* Remove the margin on smaller screens */
+          margin-left: 0; /* Remove the margin on smaller screens */
+        }
+      }
+      /* review box */
+      @media (min-width: 768px) {
+        .review-box {
+          width: calc(33.33% - 20px);
+          margin-right: 20px;
+          margin-bottom: 0;
+        }
+      }
