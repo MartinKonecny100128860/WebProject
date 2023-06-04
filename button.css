@@ -45,16 +45,4 @@
     text-decoration: none;
     color:rgba(255, 255, 255, 0.8)
   }
-
-  .btn {
-    padding: 10px 20px;
-    background-color: #4b0076; /* Adjust the button color as desired */
-    color: #ffffff; /* Adjust the button text color as desired */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    background-color: #7a03be; /* Adjust the button hover color as desired */
-  }
+  

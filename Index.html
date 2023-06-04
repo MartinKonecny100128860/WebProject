@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NXrxh4V4iguh8bchb7CHHQojnbMmQ/lCgOWftVGvchLz9m9CmVXaFELAJyoKr7gQ5Cq0WjV7AA/xPW5W/zB6wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -363,9 +364,9 @@
       }
       /* footer section finish*/
     </style>
-  <header>
+  </head>
 
-  <body>
+  <header>
     <nav class="navbar">
       <div class="logo"><a href="#"><img src="Images/NavLogo.png" alt="YourLogo"></a></div>
       <div class="navbar-links">
@@ -386,17 +387,15 @@
         <span class="line"></span>
       </a>
     </nav>
-    </header>
-  </body>
+    <script>
+      const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-  <script>
-    const toggleBtn = document.getElementsByClassName('togglebtn')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-    toggleBtn.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-    })
-  </script>
+      toggleBtn.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+      })
+    </script>
+  </header>
 
   <body>
     <section class="hero">
@@ -407,115 +406,110 @@
     </section>
   </body>
 
-  <style>
-    
-  </style>
-
   <br>
 
-  <div class="container">
-    <!-- Card deck -->
-    <div class="card-deck row">
-      <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
-        <!-- Card -->
-        <div class="card">
-          <!--Card image-->
-          <div class="view overlay">
-            <a href="https://example.com/page1">
-              <div class="zoom-image">
-                <img class="card-img-top" src="Images/Card1.png" alt="Card image cap">
-              </div>
-            </a>
-            <a href="https://example.com/page1">
-              <div class="mask rgba-white-slight"></div>
-            </a>
+  <body>
+    <div class="container">
+      <!-- Card deck -->
+      <div class="card-deck row">
+        <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
+          <!-- Card -->
+          <div class="card">
+            <!--Card image-->
+            <div class="view overlay">
+              <a href="https://example.com/page1">
+                <div class="zoom-image">
+                  <img class="card-img-top" src="Images/Card1.png" alt="Card image cap">
+                </div>
+              </a>
+              <a href="https://example.com/page1">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">POKEMON SINGLES</h4>
+              <!--Text-->
+              <p class="card-text">Common, Uncommon, Rare, Holographic, Ultra Rare & Secret Rare Cards. Condtition may vary.</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              <a href="https://example.com/page1" class="btn btn-light-blue btn-md">Read more</a>
+            </div>
           </div>
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">POKEMON SINGLES</h4>
-            <!--Text-->
-            <p class="card-text">Common, Uncommon, Rare, Holographic, Ultra Rare & Secret Rare Cards. Condtition may vary.</p>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <a href="https://example.com/page1" class="btn btn-light-blue btn-md">Read more</a>
-          </div>
+          <!-- Card -->
         </div>
-        <!-- Card -->
-      </div>
-      <!-- Add the external hyperlinks to the second and third card images as well -->
-      <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!--Card image-->
-          <div class="view overlay">
-            <a href="https://example.com/page2">
-              <div class="zoom-image">
-                <img class="card-img-top" src="Images/Card2.png" alt="Card image cap">
-              </div>
-            </a>
-            <a href="https://example.com/page2">
-              <div class="mask rgba-white-slight"></div>
-            </a>
+        <!-- Add the external hyperlinks to the second and third card images as well -->
+        <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!--Card image-->
+            <div class="view overlay">
+              <a href="https://example.com/page2">
+                <div class="zoom-image">
+                  <img class="card-img-top" src="Images/Card2.png" alt="Card image cap">
+                </div>
+              </a>
+              <a href="https://example.com/page2">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">POKEMON GRADED</h4>
+              <!--Text-->
+              <p class="card-text">Graded Pokemon Cards. Graded cards are from most major grading companies including ACE Grading.</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              <a href="https://example.com/page2" class="btn btn-light-blue btn-md">Read more</a>
+            </div>
           </div>
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">POKEMON GRADED</h4>
-            <!--Text-->
-            <p class="card-text">Graded Pokemon Cards. Graded cards are from most major grading companies including ACE Grading.</p>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <a href="https://example.com/page2" class="btn btn-light-blue btn-md">Read more</a>
-          </div>
+          <!-- Card -->
         </div>
-        <!-- Card -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!--Card image-->
-          <div class="view overlay">
-            <a href="https://example.com/page3">
-              <div class="zoom-image">
-                <img class="card-img-top" src="Images/Card3.png" alt="Card image cap">
-              </div>
-            </a>
-            <a href="https://example.com/page3">
-              <div class="mask rgba-white-slight"></div>
-            </a>
+        <div class="col-xs-12 col-sm-6 col-md-4 fade-box">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!--Card image-->
+            <div class="view overlay">
+              <a href="https://example.com/page3">
+                <div class="zoom-image">
+                  <img class="card-img-top" src="Images/Card3.png" alt="Card image cap">
+                </div>
+              </a>
+              <a href="https://example.com/page3">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">POKEMON SEALED</h4>
+              <!--Text-->
+              <p class="card-text">Sealed Pokemon Products. Booster Boxes, Elite Trainer Boxes, Booster Packs, Tins and many more.</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              <a href="https://example.com/page3" class="btn btn-light-blue btn-md">Read more</a>
+            </div>
           </div>
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">POKEMON SEALED</h4>
-            <!--Text-->
-            <p class="card-text">Sealed Pokemon Products. Booster Boxes, Elite Trainer Boxes, Booster Packs, Tins and many more.</p>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <a href="https://example.com/page3" class="btn btn-light-blue btn-md">Read more</a>
-          </div>
+          <!-- Card -->
         </div>
-        <!-- Card -->
       </div>
+      <!-- Card deck -->
     </div>
-    <!-- Card deck -->
-  </div>
-  
-  <style>
-      
-  </style>
+  </body>
 
-  <section class="section">
-    <h2 class="section-title">Other TCG's</h2>
-    <div class="section-content">
-      <p>
-        <a href="#" class="btncirc">FIND OUT MORE!</a>
-      </p>
-      <br>
-      <div class="image-grid">
-        <div class="image-container">
-          <div class="image-overlay"></div>
-          <img src="Images/PokemonLogo.jpg" alt="Image 1" class="circle-image">
-      </div>
-        <div class="image-container">
+  <body>
+    <section class="section">
+      <h2 class="section-title">Other TCG's</h2>
+      <div class="section-content">
+        <p>
+          <a href="#" class="btncirc">FIND OUT MORE!</a>
+        </p>
+        <br>
+        <div class="image-grid">
+          <div class="image-container">
+            <div class="image-overlay"></div>
+            <img src="Images/PokemonLogo.jpg" alt="Image 1" class="circle-image">
+          </div>
+          <div class="image-container">
             <div class="image-overlay"></div>
             <img src="Images/Weiss.jpg" alt="Image 2" class="circle-image">
           </div>
@@ -530,113 +524,111 @@
           <div class="image-container">
             <div class="image-overlay"></div>
             <img src="Images/OnePieceLogo.jpg" alt="Image 5" class="circle-image">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-<style>
- 
-</style>
-
-
-<script>
-  // JavaScript to trigger the animation when the section comes into view
-  
-  // Function to check if an element is in the viewport
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
-  
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= windowHeight &&
-      rect.right <= windowWidth
-    );
-  }
-  
-  // Function to handle scroll event
-  function handleScroll() {
-    var imageContainers = document.querySelectorAll('.image-container');
-  
-    // Check if each image container is in the viewport
-    imageContainers.forEach(function (container) {
-      if (isElementInViewport(container)) {
-        container.classList.add('fade-in');
+    </section>
+    <script>
+      // JavaScript to trigger the animation when the section comes into view
+      
+      // Function to check if an element is in the viewport
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= windowHeight &&
+          rect.right <= windowWidth
+        );
       }
-    });
-  }
-  
-  // Attach scroll event listener
-  window.addEventListener('scroll', handleScroll);
-</script>
-
+      
+      // Function to handle scroll event
+      function handleScroll() {
+        var imageContainers = document.querySelectorAll('.image-container');
+      
+        // Check if each image container is in the viewport
+        imageContainers.forEach(function (container) {
+          if (isElementInViewport(container)) {
+            container.classList.add('fade-in');
+          }
+        });
+      }
+      
+      // Attach scroll event listener
+      window.addEventListener('scroll', handleScroll);
+    </script>
+  </body>
 
   <br>
 
-  <div class="full-width-section">
-    <div class="background-image"></div>
-    <div class="content-container">
-      <div class="box left-box">
-        <h2>Visit Us</h2>
-        <p>Come and visit our store today and immerse yourself in the world of TCGs. </p>
-        <p>Discover an extensive collection of Pokemon cards and other exciting TCG products that will ignite your passion for collecting</p>
-        <button class="btncirc">Find Out More</button>
-      </div>
-      <div class="box right-box">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94991.3340758525!2d-2.2405360000000005!3d53.83460725000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b90dc6eab89b5%3A0x8432c412cfa52dd4!2sNelson%2C%20UK!5e0!3m2!1sen!2suk!4v1626142674469!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <body>
+    <div class="full-width-section">
+      <div class="background-image"></div>
+      <div class="content-container">
+        <div class="box left-box">
+          <h2>Visit Us</h2>
+          <p>Come and visit our store today and immerse yourself in the world of TCGs. </p>
+          <p>Discover an extensive collection of Pokemon cards and other exciting TCG products that will ignite your passion for collecting</p>
+          <button class="btncirc">Find Out More</button>
+        </div>
+        <div class="box right-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94991.3340758525!2d-2.2405360000000005!3d53.83460725000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b90dc6eab89b5%3A0x8432c412cfa52dd4!2sNelson%2C%20UK!5e0!3m2!1sen!2suk!4v1626142674469!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <style>
+  </body>
 
-  </style>
-
-
-  <div class="container my-5" id="abouttextstyle">
-    <div class="row">
-      <div class="col-md-6 p-4 p-sm-5 order-2 order-sm-1">
-        <small class="text-uppercase"></small>
-        <h1 class="h2 mb-4" style="font-weight: 600;">Our Mission</span></h1>
-        <p class="text-secondary" style="line-height: 2;">Our mission is clear. We aim to become the nation's leading TCG store. 
-          We strive to offer a wide range of major TCG products while continually 
-          expanding our enterprise. As part of our growth, we are excited to venture 
-          into new avenues, including the introduction of card grading services for 
-          Pokemon enthusiasts. With our dedication and passion, we aim to provide 
-          exceptional experiences to collectors and become a trusted destination for 
-          all things TCG-related.
-        </p>
-       
-      </div>
+  <body>
+    <div class="container my-5" id="abouttextstyle">
+      <div class="row">
+        <div class="col-md-6 p-4 p-sm-5 order-2 order-sm-1">
+          <small class="text-uppercase"></small>
+          <h1 class="h2 mb-4" style="font-weight: 600;">Our Mission</span></h1>
+          <p class="text-secondary" style="line-height: 2;">Our mission is clear.
+            We aim to become the nation's leading TCG store.We strive to offer a wide 
+            range of major TCG products while continually expanding our enterprise. 
+            As part of our growth, we are excited to venture into new avenues, including
+            the introduction of card grading services for Pokemon enthusiasts. With our 
+            dedication and passion, we aim to provide exceptional experiences to collectors 
+            and become a trusted destination for all things TCG-related.
+          </p> 
+        </div>
         <div class="col-md-6 p-0 text-center order-1 order-sm-2">
           <img src="Images/News1.jpg" class="w-100" alt="">
         </div>
-
         <div class="col-md-6 p-0 text-center">
           <img src="Images/News2.png" class="w-100" alt="">
         </div>
         <div class="col-md-6 p-4 p-sm-5">
           <small class="text-uppercase"></small>
           <h1 class="h2 mb-4" style="font-weight: 600;">About us</span></h1>
-          <p class="text-secondary" style="line-height: 2;"> Welcome to our shop, where we indulge in our passion for Pokemon cards and other TCG-related products. With a deep-rooted love for the collecting hobby, we strive to provide enthusiasts like you with an exceptional experience. Our extensive selection of Pokemon cards, booster packs, and TCG accessories caters to collectors of all levels. Whether you're a seasoned player or a novice collector, our shop is your ultimate destination. Explore our treasure trove and embark on an exciting journey into the captivating world of Pokemon and TCGs.</p>
-      
+          <p class="text-secondary" style="line-height: 2;"> Welcome to our shop, where we indulge in
+            our passion for Pokemon cards and other TCG-related products. With a deep-rooted love for
+            the collecting hobby, we strive to provide enthusiasts like you with an exceptional 
+            experience. Our extensive selection of Pokemon cards, booster packs, and TCG accessories 
+            caters to collectors of all levels. Whether you're a seasoned player or a novice collector, 
+            our shop is your ultimate destination. Explore our treasure trove and embark on an exciting 
+            journey into the captivating world of Pokemon and TCGs.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <section class="review-section">
-    <div class="review-container">
-      <div class="image-box">
+  </body>
 
+  <body>
+    <section class="review-section">
+      <div class="review-container">
+        <div class="image-box">
       </div>
       <div class="review-box">
         <div class="review-background">
           <img src="Images/stars.png" class="review-stars" alt="Review Stars">
           <h3>Amazing Service</h3>
-          <p>Amazing selection and great service! Found rare Pokemon cards I've been searching for everywhere.
+          <p>Amazing selection and great service! Found rare Pokemon cards 
+            I've been searching for everywhere.
           </p>
           <p>Tobi U.</p>
           <br>
@@ -647,7 +639,9 @@
         <div class="review-background">
           <img src="Images/stars.png" class="review-stars" alt="Review Stars">
           <h3>Highly Recommend</h3>
-          <p>Highly recommend this store for TCG enthusiasts! They have a wide variety of products and the staff is incredibly knowledgeable and friendly.</p>
+          <p>Highly recommend this store for TCG enthusiasts! They have a wide variety 
+            of products and the staff is incredibly knowledgeable and friendly.
+          </p>
           <p> Trusted Customer</p>
           <br>
           <p class="review-timestamp">Posted 1 day ago</p>
@@ -657,7 +651,9 @@
         <div class="review-background">
           <img src="Images/stars.png" class="review-stars" alt="Review Stars">
           <h3>Good Experience!</h3>
-          <p>Best place to buy Pokemon cards! Their prices are competitive, and I always leave with great finds for my collection.</p>
+          <p>Best place to buy Pokemon cards! Their prices are competitive, and I always leave 
+            with great finds for my collection.
+          </p>
           <p> Trusted Customer</p>
           <br>
           <p class="review-timestamp">Posted 1 day ago</p>
@@ -665,51 +661,45 @@
       </div>
     </div>
   </section>
+  </body>
 
-  <style>
-
-  </style>
-</head>
-<body>
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3 class="footer-title">MK CARDS</h3>
-        <a href="#">
-          <img class="footer-logo" src="Images/NavLogo.png" alt="MK CARDS Logo">
-        </a>
-      </div>
-      <div class="footer-section">
-        <p class="footer-address">123 Main Street, City, Country</p>
-        <p class="footer-address">info@example.com</p>
-        <p class="footer-address">Phone: 123-456-7890</p>
-      </div>
-      <div class="footer-section">
-        <h3 class="footer-title">Socials</h3>
-        <div class="footer-images">
-          <a href="https://www.instagram.com/mkcardss/">
-            <img src="Images/Instagram.png" alt="Social Icon 1" class="social-icon">
-          </a>
-          
-          <a href="https://github.com/MartinKonecny100128860">
-            <img src="Images/Github.png" alt="Social Icon 2" class="social-icon">
-          </a>
-          
-          <a href="https://uk.linkedin.com/in/martin-konecny-624b93223">
-            <img src="Images/LinkedIn.jpg" alt="Social Icon 3" class="social-icon">
+  <body>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">MK CARDS</h3>
+          <a href="#">
+            <img class="footer-logo" src="Images/NavLogo.png" alt="MK CARDS Logo">
           </a>
         </div>
+        <div class="footer-section">
+          <p class="footer-address">123 Main Street, City, Country</p>
+          <p class="footer-address">info@example.com</p>
+          <p class="footer-address">Phone: 123-456-7890</p>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Socials</h3>
+          <div class="footer-images">
+            <a href="https://www.instagram.com/mkcardss/">
+              <img src="Images/Instagram.png" alt="Social Icon 1" class="social-icon">
+            </a>
+          
+            <a href="https://github.com/MartinKonecny100128860">
+              <img src="Images/Github.png" alt="Social Icon 2" class="social-icon">
+            </a>
+          
+            <a href="https://uk.linkedin.com/in/martin-konecny-624b93223">
+              <img src="Images/LinkedIn.jpg" alt="Social Icon 3" class="social-icon">
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-  <div class="bottom-bar">
-    Powered By. MK CARDS © 2023 | <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
-  </div>
-</body>
-<head>
-  <!-- Other head elements -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Additional styling and CSS -->
-</head>  
+    </footer>
+  </body>
 
+  <body>
+    <div class="bottom-bar">
+      Powered By. MK CARDS © 2023 | <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+    </div>
+  </body> 
 </html>
