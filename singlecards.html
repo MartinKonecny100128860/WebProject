@@ -1,0 +1,426 @@
+<html>
+  <head>
+    <title>MK Cards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NXrxh4V4iguh8bchb7CHHQojnbMmQ/lCgOWftVGvchLz9m9CmVXaFELAJyoKr7gQ5Cq0WjV7AA/xPW5W/zB6wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Styles/homestyles.css">
+    <link rel="stylesheet" href="Styles/button.css">
+    <link rel="stylesheet" href="Styles/media.css">
+    <link rel="stylesheet" href="Styles/hero.css">
+  </head>
+
+    <head>
+        <style>
+
+        </style>
+    </head>
+
+    <header>
+        <nav class="navbar">
+          <div class="logo"><a href="#"><img src="Images/NavLogo.png" alt="YourLogo"></a></div>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="#">Single Cards</a></li>
+              <li><a href="gradedcards.html">Graded Cards</a></li>
+              <li><a href="#">Sealed Products</a></li>
+              <li><a href="#">Other TCG</a></li>
+            </ul>
+          </div>
+          <div class="cart">
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a>
+            <span class="cart-count">0</span>
+          </div>
+          <a class="togglebtn" href="#">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </a>
+        </nav>
+        <script>
+          const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+          const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    
+          toggleBtn.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+          })
+        </script>
+    </header>
+
+    <body>
+          <section class="hero" style="background-image: url('Images/HeroImg.jpg');">
+              <div class="hero-content">
+                <h1 class="hero-title fade-in">SINGLE CARDS</h1>
+              </div>
+            </section>
+            <script>
+              // Fade-in effect on scroll
+              var heroSection = document.querySelector('.hero');
+              var heroTitle = document.querySelector('.hero-title');
+          
+              window.addEventListener('scroll', fadeHeroOnScroll);
+          
+              function fadeHeroOnScroll() {
+                var scrollPosition = window.scrollY;
+                var windowHeight = window.innerHeight;
+          
+                // Calculate the opacity based on the scroll position
+                var opacity = 1 - (scrollPosition / (windowHeight * 0.8));
+          
+                heroSection.style.opacity = opacity;
+                heroTitle.style.opacity = opacity;
+              }
+            </script>
+    </body>
+
+    <head>
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+      
+          body {
+            font-family: 'Muli', sans-serif;
+          }
+      
+          .shell {
+            padding: 80px 0;
+          }
+      
+          .wsk-cp-product {
+            background: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            position: relative;
+            margin: 20px auto;
+          }
+      
+          .wsk-cp-img {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            padding: 15px;
+            transition: all 0.2s ease-in-out;
+          }
+      
+          .wsk-cp-img img {
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+            border-radius: 6px;
+          }
+      
+          .wsk-cp-product:hover .wsk-cp-img {
+            top: -40px;
+          }
+      
+          .wsk-cp-product:hover .wsk-cp-img img {
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+          }
+      
+          .wsk-cp-text {
+            padding-top: 150%;
+          }
+      
+          .wsk-cp-text .category {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px;
+            margin-bottom: 45px;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+          }
+      
+          .wsk-cp-text .category>* {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      
+          .wsk-cp-text .category>span {
+            padding: 12px 30px;
+            border: 1px solid #313131;
+            background: #212121;
+            color: #fff;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+            border-radius: 27px;
+            transition: all 0.05s ease-in-out;
+          }
+      
+          .wsk-cp-product:hover .wsk-cp-text .category>span {
+            border-color: #ddd;
+            box-shadow: none;
+            padding: 11px 28px;
+          }
+      
+          .wsk-cp-product:hover .wsk-cp-text .category {
+            margin-top: 0px;
+          }
+      
+          .wsk-cp-text .title-product {
+            text-align: center;
+          }
+      
+          .wsk-cp-text .title-product h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+          }
+      
+          .wsk-cp-text .description-prod p {
+            margin: 0;
+          }
+      
+          /* Truncate */
+          .wsk-cp-text .description-prod {
+            text-align: center;
+            width: 100%;
+            height: 62px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin-bottom: 15px;
+          }
+      
+          .card-footer {
+            padding: 5px 0;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+      
+          .card-footer .wcf-left {
+            flex-grow: 1;
+          }
+      
+          .card-footer .wcf-right {
+            margin-left: 10px;
+          }
+      
+          .price {
+            font-size: 18px;
+            font-weight: bold;
+          }
+      
+          .btn {
+            display: flex;
+            align-items: center;
+            background-color: #212121;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+      
+          .btn i {
+            margin-right: 5px;
+          }
+      
+          .btn:hover {
+            background-color: #111;
+          }
+      
+          @media (max-width: 991px) {
+            .col-md-3 {
+              flex: 0 0 50%;
+              max-width: 50%;
+            }
+          }
+      
+          @media (max-width: 767px) {
+            .shell {
+              padding: 40px 0;
+            }
+      
+            .wsk-cp-product {
+              margin: 10px auto;
+            }
+      
+            .wsk-cp-product:hover .wsk-cp-img {
+              top: -20px;
+            }
+      
+            .col-md-3 {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+          }
+      
+          @media (max-width: 480px) {
+            .wsk-cp-img {
+              padding: 10px;
+            }
+      
+            .wsk-cp-text .category {
+              font-size: 10px;
+              margin-bottom: 30px;
+            }
+      
+            .wsk-cp-text .title-product h3 {
+              font-size: 16px;
+            }
+      
+            .wsk-cp-text .description-prod {
+              height: 50px;
+            }
+      
+            .card-footer {
+              padding: 5px 0;
+            }
+      
+            .price {
+              font-size: 16px;
+            }
+      
+            .btn {
+              padding: 8px 12px;
+              font-size: 12px;
+            }
+          }
+        </style>
+      </head>
+      
+      <body>
+        <div class="shell">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img">
+                    <img src="Images/singlecard1.jpg" alt="Product 1">
+                  </div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>NM</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Product 1</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>Description of Product 1.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left">
+                        <span class="price">$19.99</span>
+                      </div>
+                      <div class="wcf-right">
+                        <button class="btn">
+                          <i class="fa fa-shopping-cart"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img">
+                    <img src="Images/singlecard2.jpg" alt="Product 2">
+                  </div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>HP</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Product 2</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>Description of Product 2.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left">
+                        <span class="price">$29.99</span>
+                      </div>
+                      <div class="wcf-right">
+                        <button class="btn">
+                          <i class="fa fa-shopping-cart"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img">
+                    <img src="Images/singlecard3.jpg" alt="Product 3">
+                  </div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>EXC</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Product 3</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>Description of Product 3.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left">
+                        <span class="price">$39.99</span>
+                      </div>
+                      <div class="wcf-right">
+                        <button class="btn">
+                          <i class="fa fa-shopping-cart"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img">
+                    <img src="Images/singlecard4.jpg" alt="Product 4">
+                  </div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>NM</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Product 4</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>Description of Product 4.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left">
+                        <span class="price">$49.99</span>
+                      </div>
+                      <div class="wcf-right">
+                        <button class="btn">
+                          <i class="fa fa-shopping-cart"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+      
+
+</html>
