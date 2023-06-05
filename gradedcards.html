@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>MK Cards</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NXrxh4V4iguh8bchb7CHHQojnbMmQ/lCgOWftVGvchLz9m9CmVXaFELAJyoKr7gQ5Cq0WjV7AA/xPW5W/zB6wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="homestyles.css">
+        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+
+    <head>
+        <style>
+            /* Hero section start*/
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+            .hero {
+                position: relative;
+                background-image: url("Images/HeroImg.jpg"); /* Replace with your hero image URL */
+                background-size: cover;
+                background-position: center;
+                padding: 150px 25px; /* Adjust the padding as needed */
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                color: #ffffff;
+            }
+
+            .hero:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+            }
+
+            .hero-content {
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+            }
+
+            .hero-title {
+                font-size: 50px;
+                font-weight: bold;
+                letter-spacing: 4px;
+                opacity: 0;
+                transform: translateX(-50px);
+                animation: title-entrance 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+                animation-delay: 0.5s;
+            }
+
+            @keyframes title-entrance {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }   
+            }
+
+            /* Fade-in effect on scroll */
+            .fade-in {
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+
+            .fade-in.active {
+                opacity: 1;
+            }
+            /* Hero section finish */
+        </style>
+    </head>
+
+    <header>
+        <nav class="navbar">
+          <div class="logo"><a href="#"><img src="Images/NavLogo.png" alt="YourLogo"></a></div>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="#">Single Cards</a></li>
+              <li><a href="gradedcards.html">Graded Cards</a></li>
+              <li><a href="#">Sealed Products</a></li>
+              <li><a href="#">Other TCG</a></li>
+            </ul>
+          </div>
+          <div class="cart">
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a>
+            <span class="cart-count">0</span>
+          </div>
+          <a class="togglebtn" href="#">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </a>
+        </nav>
+        <script>
+          const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+          const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    
+          toggleBtn.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+          })
+        </script>
+    </header>
+
+    <body>
+        <body>
+            <section class="hero">
+              <div class="hero-content">
+                <h1 class="hero-title fade-in">GRADED POKEMON CARDS</h1>
+              </div>
+            </section>
+            <script>
+              // Fade-in effect on scroll
+              var heroSection = document.querySelector('.hero');
+              var heroTitle = document.querySelector('.hero-title');
+          
+              window.addEventListener('scroll', fadeHeroOnScroll);
+          
+              function fadeHeroOnScroll() {
+                var scrollPosition = window.scrollY;
+                var windowHeight = window.innerHeight;
+          
+                // Calculate the opacity based on the scroll position
+                var opacity = 1 - (scrollPosition / (windowHeight * 0.8));
+          
+                heroSection.style.opacity = opacity;
+                heroTitle.style.opacity = opacity;
+              }
+            </script>
+          </body>
+    </body>
+
+</html>
