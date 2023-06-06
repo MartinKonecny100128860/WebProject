@@ -53,32 +53,4 @@
         </script>
     </header>
 
-    <body>
-        <body>
-          <section class="hero" style="background-image: url('Images/HeroImg.jpg');">
-              <div class="hero-content">
-                <h1 class="hero-title fade-in">GRADED POKEMON CARDS</h1>
-              </div>
-            </section>
-            <script>
-              // Fade-in effect on scroll
-              var heroSection = document.querySelector('.hero');
-              var heroTitle = document.querySelector('.hero-title');
-          
-              window.addEventListener('scroll', fadeHeroOnScroll);
-          
-              function fadeHeroOnScroll() {
-                var scrollPosition = window.scrollY;
-                var windowHeight = window.innerHeight;
-          
-                // Calculate the opacity based on the scroll position
-                var opacity = 1 - (scrollPosition / (windowHeight * 0.8));
-          
-                heroSection.style.opacity = opacity;
-                heroTitle.style.opacity = opacity;
-              }
-            </script>
-          </body>
-    </body>
-
 </html>
