@@ -16,9 +16,9 @@
   </head>
 
     <head>
-        <style>
-
-        </style>
+      <style>
+        
+      </style>
     </head>
 
     <header>
@@ -79,348 +79,172 @@
             </script>
     </body>
 
-    <head>
-        <style>
-          @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+    <style>
+      .shop-section {
+          background-color: black;
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+      }
       
-          body {
-            font-family: 'Muli', sans-serif;
-          }
+      .shop-title {
+          color: white;
+      }
       
-          .shell {
-            padding: 80px 0;
-          }
+      .shop-links {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+      }
       
-          .wsk-cp-product {
-            background: #fff;
-            padding: 15px;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            position: relative;
-            margin: 20px auto;
-          }
+      .shop-link {
+          color: white;
+          text-decoration: none;
+          margin-right: 70px;
+      }
       
-          .wsk-cp-img {
-            position: absolute;
-            top: 5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            padding: 15px;
-            transition: all 0.2s ease-in-out;
-          }
+      .shop-link:last-child {
+          margin-right: 0;
+      }
       
-          .wsk-cp-img img {
-            width: 100%;
-            transition: all 0.2s ease-in-out;
-            border-radius: 6px;
-          }
-      
-          .wsk-cp-product:hover .wsk-cp-img {
-            top: -40px;
-          }
-      
-          .wsk-cp-product:hover .wsk-cp-img img {
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-          }
-      
-          .wsk-cp-text {
-            padding-top: 150%;
-          }
-      
-          .wsk-cp-text .category {
-            text-align: center;
-            font-size: 12px;
-            font-weight: bold;
-            padding: 5px;
-            margin-bottom: 45px;
-            position: relative;
-            transition: all 0.2s ease-in-out;
-          }
-      
-          .wsk-cp-text .category>* {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-      
-          .wsk-cp-text .category>span {
-            padding: 12px 30px;
-            border: 1px solid #313131;
-            background: #212121;
-            color: #fff;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-            border-radius: 27px;
-            transition: all 0.05s ease-in-out;
-          }
-      
-          .wsk-cp-product:hover .wsk-cp-text .category>span {
-            border-color: #ddd;
-            box-shadow: none;
-            padding: 11px 28px;
-          }
-      
-          .wsk-cp-product:hover .wsk-cp-text .category {
-            margin-top: 0px;
-          }
-      
-          .wsk-cp-text .title-product {
-            text-align: center;
-          }
-      
-          .wsk-cp-text .title-product h3 {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 15px auto;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 100%;
-          }
-      
-          .wsk-cp-text .description-prod p {
-            margin: 0;
-          }
-      
-          /* Truncate */
-          .wsk-cp-text .description-prod {
-            text-align: center;
-            width: 100%;
-            height: 62px;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            margin-bottom: 15px;
-          }
-      
-          .card-footer {
-            padding: 5px 0;
-            border-top: 1px solid #ddd;
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-      
-          .card-footer .wcf-left {
-            flex-grow: 1;
-          }
-      
-          .card-footer .wcf-right {
-            margin-left: 10px;
-          }
-      
-          .price {
-            font-size: 18px;
-            font-weight: bold;
-          }
-      
-          .btn {
-            display: flex;
-            align-items: center;
-            background-color: #212121;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-          }
-      
-          .btn i {
-            margin-right: 5px;
-          }
-      
-          .btn:hover {
-            background-color: #111;
-          }
-      
-          @media (max-width: 991px) {
-            .col-md-3 {
-              flex: 0 0 50%;
-              max-width: 50%;
-            }
-          }
-      
-          @media (max-width: 767px) {
-            .shell {
-              padding: 40px 0;
-            }
-      
-            .wsk-cp-product {
-              margin: 10px auto;
-            }
-      
-            .wsk-cp-product:hover .wsk-cp-img {
-              top: -20px;
-            }
-      
-            .col-md-3 {
-              flex: 0 0 100%;
-              max-width: 100%;
-            }
-          }
-      
-          @media (max-width: 480px) {
-            .wsk-cp-img {
-              padding: 10px;
-            }
-      
-            .wsk-cp-text .category {
-              font-size: 10px;
-              margin-bottom: 30px;
-            }
-      
-            .wsk-cp-text .title-product h3 {
-              font-size: 16px;
-            }
-      
-            .wsk-cp-text .description-prod {
-              height: 50px;
-            }
-      
-            .card-footer {
-              padding: 5px 0;
-            }
-      
-            .price {
-              font-size: 16px;
-            }
-      
-            .btn {
-              padding: 8px 12px;
-              font-size: 12px;
-            }
-          }
-        </style>
-      </head>
-      
-      <body>
-        <div class="shell">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="wsk-cp-product">
-                  <div class="wsk-cp-img">
-                    <img src="Images/singlecard1.jpg" alt="Product 1">
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category">
-                      <span>NM</span>
-                    </div>
-                    <div class="title-product">
-                      <h3>Product 1</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Description of Product 1.</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="wcf-left">
-                        <span class="price">$19.99</span>
-                      </div>
-                      <div class="wcf-right">
-                        <button class="btn">
-                          <i class="fa fa-shopping-cart"></i>
-                          Add to Cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="wsk-cp-product">
-                  <div class="wsk-cp-img">
-                    <img src="Images/singlecard2.jpg" alt="Product 2">
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category">
-                      <span>HP</span>
-                    </div>
-                    <div class="title-product">
-                      <h3>Product 2</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Description of Product 2.</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="wcf-left">
-                        <span class="price">$29.99</span>
-                      </div>
-                      <div class="wcf-right">
-                        <button class="btn">
-                          <i class="fa fa-shopping-cart"></i>
-                          Add to Cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="wsk-cp-product">
-                  <div class="wsk-cp-img">
-                    <img src="Images/singlecard3.jpg" alt="Product 3">
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category">
-                      <span>EXC</span>
-                    </div>
-                    <div class="title-product">
-                      <h3>Product 3</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Description of Product 3.</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="wcf-left">
-                        <span class="price">$39.99</span>
-                      </div>
-                      <div class="wcf-right">
-                        <button class="btn">
-                          <i class="fa fa-shopping-cart"></i>
-                          Add to Cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="wsk-cp-product">
-                  <div class="wsk-cp-img">
-                    <img src="Images/singlecard4.jpg" alt="Product 4">
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category">
-                      <span>NM</span>
-                    </div>
-                    <div class="title-product">
-                      <h3>Product 4</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Description of Product 4.</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="wcf-left">
-                        <span class="price">$49.99</span>
-                      </div>
-                      <div class="wcf-right">
-                        <button class="btn">
-                          <i class="fa fa-shopping-cart"></i>
-                          Add to Cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      .shop-link:hover {
+          text-decoration: underline;
+      }
+  </style>
+  <section class="shop-section">
+      <h2 class="shop-title">SHOP BY:</h2>
+      <div class="shop-links">
+          <a class="shop-link" href="#">Mint Condition</a>
+          <a class="shop-link" href="#">Near Mint Condition</a>
+          <a class="shop-link" href="#">Excellent Condition</a>
+          <a class="shop-link" href="#">Good Condition</a>
+          <a class="shop-link" href="#">Played Condition</a>
+          <a class="shop-link" href="#">Damaged Condition</a>
+      </div>
+  </section>
+
+  <head>
+    <style>
+      /* CSS for the side panel */
+      .side-panel {
+        width: 200px;
+        height: 100%;
+        background-color: #f1f1f1;
+        float: left;
+        border-right: 1px solid #ccc;
+      }
+  
+      /* CSS for circular images */
+      .side-panel img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 10px;
+      }
+  
+      /* CSS for product cards */
+      .product-card {
+        width: calc(100% - 200px);
+        float: left;
+        padding: 10px;
+      }
+  
+      .product-card .card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+  
+      .product-card .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+  
+      .product-card .card .category {
+        font-size: 14px;
+        color: #888;
+      }
+  
+      .product-card .card .title-product {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+  
+      .product-card .card .description-prod {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+  
+      .product-card .card .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .product-card .card .card-footer .wcf-left {
+        font-size: 16px;
+        font-weight: bold;
+      }
+  
+      .product-card .card .card-footer .buy-btn {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-panel">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  
+    <div class="product-card">
+      <div class="card">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="category">
+          <span>Ethnic</span>
         </div>
-      </body>
-      
+        <div class="title-product">
+          <h3>My face not my heart</h3>
+        </div>
+        <div class="description-prod">
+          <p>Description of Product 1</p>
+        </div>
+        <div class="card-footer">
+          <div class="wcf-left"><span class="price">Rp500.000</span></div>
+          <div class="wcf-right"><a href="#" class="buy-btn">Buy Now</a></div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="category">
+          <span>Introvert</span>
+        </div>
+        <div class="title-product">
+          <h3>My face not my heart</h3>
+        </div>
+        <div class="description-prod">
+          <p>Description of Product 2</p>
+        </div>
+        <div class="card-footer">
+          <div class="wcf-left"><span class="price">Rp700.000</span></div>
+          <div class="wcf-right"><a href="#" class="buy-btn">Buy Now</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+    
+    
 
 </html>
+
