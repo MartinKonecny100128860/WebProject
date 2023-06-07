@@ -172,38 +172,34 @@
   }
 
   .circular-image {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
+    text-align: center;
     margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
 
   .circular-image img {
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-  }
-
-  /* New styles */
-
-  .circular-image::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
     transition: opacity 0.2s ease-in-out;
   }
 
-  .circular-image:hover::after {
-    opacity: 1;
+  .circular-image:hover img {
+    opacity: 0.7;
   }
 
+  .image-heading {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .show-image {
+    opacity: 1;
+  }
       
       .wsk-cp-product{
   background:#fafafa;
@@ -371,6 +367,7 @@
         <div class="circular-grid">
           <div class="circular-image">
             <img src="Images/Weiss.jpg" alt="Circular Image 1">
+            <h3 class="image-heading">Card 7</h3>
           </div>
           <br>
           <br>
@@ -404,6 +401,29 @@
           </div>
         </div>
       </div>
+      <script>
+        const circularImages = document.querySelectorAll('.circular-image');
+      
+        const handleIntersection = (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show-image');
+              observer.unobserve(entry.target);
+            }
+          });
+        };
+      
+        const observer = new IntersectionObserver(handleIntersection, {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.2 // Adjust the threshold value as needed
+        });
+      
+        circularImages.forEach(image => {
+          observer.observe(image);
+        });
+      </script>
+      
        <br>
        <br>
        <br>
