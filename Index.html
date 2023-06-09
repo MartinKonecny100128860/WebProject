@@ -593,6 +593,118 @@
   </section>
   </body>
 
+  <head>
+    <style>
+      /* footer section */
+      .footer {
+        background-color: #0d0218;
+        background-size: cover;
+        padding: 20px;
+      }
+  
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .footer-section {
+        flex-basis: 33%;
+        text-align: center;
+      }
+  
+      .footer-title {
+        font-size: 20px;
+        color: #000000;
+      }
+  
+      .footer-logo {
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+        transition: transform 0.3s ease;
+      }
+  
+      .footer-address {
+        color: #000000;
+      }
+  
+      .footer-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+  
+      .footer-images img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        transition: transform 0.3s ease;
+      }
+  
+      /* bottom bar section */
+      .bottom-bar {
+        position: relative;
+        text-align: center;
+        font-size: .8em;
+        text-transform: uppercase;
+        background: #000000;
+        color: #ffffff;
+        padding: 15px 0;
+      }
+  
+      .social-icon {
+        transition: transform 0.3s ease;
+      }
+  
+      .social-icon:hover {
+        transform: scale(1.1);
+      }
+  
+      .footer-logo:hover {
+        transform: scale(1.1);
+      }
+  
+      /* newsletter section */
+      .newsletter-section {
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #d5d5d5;
+      }
+  
+      .newsletter-title {
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+  
+      .newsletter-input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+  
+      .newsletter-button {
+        padding: 10px 20px;
+        background-color: #000000;
+        border: none;
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+  
+      .newsletter-button:hover {
+        background-color: #555555;
+      }
+    </style>
+  </head>
+  
   <body>
     <footer class="footer">
       <div class="footer-content">
@@ -608,16 +720,24 @@
           <p class="footer-address">Phone: 123-456-7890</p>
         </div>
         <div class="footer-section">
+          <div class="newsletter-section">
+            <h3 class="newsletter-title">Newsletter</h3>
+            <form class="newsletter-form" action="/subscribe" method="POST">
+              <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+              <br>
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-section">
           <h3 class="footer-title">Socials</h3>
           <div class="footer-images">
             <a href="https://www.instagram.com/mkcardss/">
               <img src="Images/Instagram.png" alt="Social Icon 1" class="social-icon">
             </a>
-          
             <a href="https://github.com/MartinKonecny100128860">
               <img src="Images/Github.png" alt="Social Icon 2" class="social-icon">
             </a>
-          
             <a href="https://uk.linkedin.com/in/martin-konecny-624b93223">
               <img src="Images/LinkedIn.jpg" alt="Social Icon 3" class="social-icon">
             </a>
@@ -625,11 +745,9 @@
         </div>
       </div>
     </footer>
-  </body>
-
-  <body>
+  
     <div class="bottom-bar">
       Powered By. MK CARDS © 2023 | <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
     </div>
-  </body> 
+  </body>
 </html>
