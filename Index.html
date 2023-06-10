@@ -306,19 +306,19 @@
         <a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a>
         <span class="cart-count">0</span>
       </div>
-      <a class="togglebtn" href="#">
+      <a class="togglebtn">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </a>
     </nav>
     <script>
-      const toggleBtn = document.getElementsByClassName('togglebtn')[0]
-      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+      const toggleBtn = document.querySelector('.togglebtn');
+      const navbarLinks = document.querySelector('.navbar-links');
 
       toggleBtn.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
-      })
+        navbarLinks.classList.toggle('active');
+      });
     </script>
   </header>
 
