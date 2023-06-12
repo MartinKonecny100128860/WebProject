@@ -178,7 +178,6 @@
         padding-top: 10px;
         font-family: 'Montserrat', sans-serif;
       }
-      /* end of product cards */
 
       /* Responsive Styles */
       @media screen and (max-width: 767px) {
@@ -190,6 +189,30 @@
         .product-card {
           width: 100%;
         }
+      }
+
+      /* end of product cards */
+      .grading-companies {
+        background-color: #000000;
+        padding: 20px 0;
+      }
+
+      .grading-companies-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .grading-companies-images img {
+        width: 150px;
+        height: 150px;
+        margin: 30px;
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      .grading-companies-images img:hover {
+        opacity: 0.7;
       }
 
 
@@ -262,6 +285,19 @@
       })
     </script>
   </header>
+
+  <body>
+    <div class="grading-companies">
+      <div class="grading-companies-images">
+        <img src="Images/CircularImages/img12.png" alt="Image 1">
+        <img src="Images/CircularImages/img12.png" alt="Image 2">
+        <img src="Images/CircularImages/img12.png" alt="Image 3">
+        <img src="Images/CircularImages/img12.png" alt="Image 4">
+        <img src="Images/CircularImages/img12.png" alt="Image 5">
+      </div>
+    </div>
+    
+  </body>
 
   <body>
     <div class="product-grid">
