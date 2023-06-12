@@ -15,11 +15,188 @@
     <link rel="stylesheet" href="Styles/hero.css">
   </head>
 
-    <head>
-        <style>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+      /* hero section start */
+      .hero {
+        position: relative;
+        background-image: url("Images/HeroImg2.jpg"); /* Replace with your hero image URL */
+        background-size: cover;
+        background-position: center;
+        padding: 150px 100px; /* Adjust the padding as needed */
+        height: 500px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+      }
 
-        </style>
-    </head>
+      .hero:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-title {
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        opacity: 0;
+        transform: translateX(-50px);
+        animation: title-entrance 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+        animation-delay: 0.5s;
+        margin-top: 100;
+      }
+
+      @keyframes title-entrance {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      /* Fade-in effect on scroll */
+      .fade-in {
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+
+      .fade-in.active {
+        opacity: 1;
+      }
+
+      /* end of hero section*/
+
+      /* start of product cards*/
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+
+      .product-card {
+        width: calc(25% - 20px);
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      .image-container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.1);
+      }
+
+      .card-content {
+        margin-top: 20px;
+      }
+
+      .card-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .card-description {
+        font-size: 14px;
+        color: #888;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        background-color: white;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+      }
+
+      .buy-button {
+        display: flex;
+        background-color: #ffffff;
+        align-items: center;
+        border: none;
+        color: purple;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s;
+        padding-top: 11px;
+      }
+
+      .buy-button i {
+        margin-left: 40px;
+        font-size: 24px;
+      }
+
+      .buy-button:hover {
+        color: pink;
+        padding-top: 10px;
+      }
+      
+      .price {
+        font-weight: bold;
+        padding-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+      /* end of product cards */
+
+    </style>
+  </head>
+
+  <body>
+    <section class="hero" style="background-image: url('Images/Hero.gif');">
+      <div class="hero-content">
+        <h1 class="hero-title fade-in">GRADED CARDS</h1>
+      </div>
+    </section>
+
+    <script>
+      // Fade-in effect on scroll
+      var heroSection = document.querySelector('.hero');
+      var heroTitle = document.querySelector('.hero-title');
+    
+      window.addEventListener('scroll', fadeHeroOnScroll);
+     
+      function fadeHeroOnScroll() {
+        var scrollPosition = window.scrollY;
+        var windowHeight = window.innerHeight;
+    
+        // Calculate the opacity based on the scroll position
+        var opacity = 1 - (scrollPosition / (windowHeight * 0.8));
+  
+        heroSection.style.opacity = opacity;
+        heroTitle.style.opacity = opacity;
+      }
+    </script>
+  </body>
 
   <header>
     <nav class="navbar">
@@ -131,89 +308,4 @@
       <!-- Repeat the product-card div three more times for the other products -->
     </div>
   </body>
-    <style>
-      .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 60px;
-      margin-right: 60px;
-      }
-
-      .product-card {
-        width: calc(25% - 20px);
-        margin-bottom: 40px;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-      }
-
-      .image-container {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .image-container img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s;
-      }
-
-      .image-container img:hover {
-        transform: scale(1.1);
-      }
-
-      .card-content {
-        margin-top: 20px;
-      }
-
-      .card-title {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      .card-description {
-        font-size: 14px;
-        color: #888;
-      }
-
-      .card-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  background-color: white;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-}
-
-.buy-button {
-  display: flex;
-  background-color: #ffffff;
-  align-items: center;
-  border: none;
-  color: purple;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s;
-  padding-top: 11px;
-}
-
-.buy-button i {
-  margin-left: 40px;
-  font-size: 24px;
-}
-
-.buy-button:hover {
-  color: pink;
-  padding-top: 10px;
-}
-      .price {
-        font-weight: bold;
-        padding-top: 10px;
-      }
-
-
-
-  </style>
-
 </html>
