@@ -23,43 +23,44 @@
 
   <header>
     <nav class="navbar">
-    <div class="logo"><a href="#"><img src="Images/NavLogo.png" alt="YourLogo"></a></div>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="#">Single Cards</a></li>
-        <li><a href="gradedcards.html">Graded Cards</a></li>
-        <li><a href="#">Sealed Products</a></li>
-        <li class="dropdown">
-          <a href="#">Other TCG <i class="fas fa-angle-down"></i></a>
-          <div class="dropdown-content">
-            <a href="#">Digimon</a>
-            <a href="#">Weiss Schwarz</a>
-            <a href="#">Yu-Gi-Oh</a>
-            <a href="#">One Piece</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-          <div class="cart">
-            <a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a>
-            <span class="cart-count">0</span>
-          </div>
-          <a class="togglebtn" href="#">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </a>
-        </nav>
-        <script>
-          const toggleBtn = document.getElementsByClassName('togglebtn')[0]
-          const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+      <div class="logo"><a href="#"><img src="Images/NavLogo.png" alt="YourLogo"></a></div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="#">Single Cards</a></li>
+          <li><a href="gradedcards.html">Graded Cards</a></li>
+          <li><a href="#">Sealed Products</a></li>
+          <li class="dropdown">
+            <a href="#">Other TCG <i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Digimon</a>
+              <a href="#">Weiss Schwarz</a>
+              <a href="#">Yu-Gi-Oh</a>
+              <a href="#">One Piece</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart">
+        <a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a>
+        <span class="cart-count">0</span>
+      </div>
+      <a class="togglebtn" href="#">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </a>
+    </nav>
+    <script>
+      const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
     
-          toggleBtn.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active')
-          })
-        </script>
-    </header>
+      toggleBtn.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+      })
+    </script>
+  </header>
+
   <body>
     <div class="product-grid">
       <div class="product-card">
@@ -72,7 +73,7 @@
         </div>
         <div class="card-footer">
           <span class="price">$19.99</span>
-          <i class="fas fa-shopping-basket"></i>
+          <button class="buy-button" type="button"><i class="fas fa-shopping-basket"></i></button>
         </div>
       </div>
       <div class="product-card">
@@ -85,7 +86,7 @@
         </div>
         <div class="card-footer">
           <span class="price">$19.99</span>
-          <i class="fas fa-shopping-basket"></i>
+          <button class="buy-button" type="button"><i class="fas fa-shopping-basket"></i></button>
         </div>
       </div>
       <div class="product-card">
@@ -98,7 +99,7 @@
         </div>
         <div class="card-footer">
           <span class="price">$19.99</span>
-          <i class="fas fa-shopping-basket"></i>
+          <button class="buy-button" type="button"><i class="fas fa-shopping-basket"></i></button>
         </div>
       </div>
       <div class="product-card">
@@ -111,7 +112,7 @@
         </div>
         <div class="card-footer">
           <span class="price">$19.99</span>
-          <i class="fas fa-shopping-basket"></i>
+          <button class="buy-button" type="button"><i class="fas fa-shopping-basket"></i></button>
         </div>
       </div>
       <div class="product-card">
@@ -129,6 +130,7 @@
       </div>
       <!-- Repeat the product-card div three more times for the other products -->
     </div>
+  </body>
     <style>
       .product-grid {
       display: flex;
@@ -176,18 +178,41 @@
       }
 
       .card-footer {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
 
+.buy-button {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  border: none;
+  color: purple;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding-top: 11px;
+}
+
+.buy-button i {
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+.buy-button:hover {
+  color: pink;
+  padding-top: 10px;
+}
       .price {
         font-weight: bold;
+        padding-top: 10px;
       }
 
-      .fa-shopping-basket {
-        font-size: 18px;
-      }
+
 
   </style>
 
