@@ -61,4 +61,132 @@
         </script>
     </header>
 
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="image-container">
+          <img src="Images/Card2.png" alt="Product 1">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Product 1</h3>
+          <p class="card-description">Description of Product 1</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$19.99</span>
+          <i class="fas fa-shopping-basket"></i>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="Images/Card2.png" alt="Product 1">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Product 1</h3>
+          <p class="card-description">Description of Product 1</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$19.99</span>
+          <i class="fas fa-shopping-basket"></i>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="Images/Card2.png" alt="Product 1">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Product 1</h3>
+          <p class="card-description">Description of Product 1</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$19.99</span>
+          <i class="fas fa-shopping-basket"></i>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="Images/Card2.png" alt="Product 1">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Product 1</h3>
+          <p class="card-description">Description of Product 1</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$19.99</span>
+          <i class="fas fa-shopping-basket"></i>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="Images/Card2.png" alt="Product 1">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Product 1</h3>
+          <p class="card-description">Description of Product 1</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$19.99</span>
+          <i class="fas fa-shopping-basket"></i>
+        </div>
+      </div>
+      <!-- Repeat the product-card div three more times for the other products -->
+    </div>
+    <style>
+      .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: calc(25% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #888;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.fa-shopping-basket {
+  font-size: 18px;
+}
+
+    </style>
+
 </html>
