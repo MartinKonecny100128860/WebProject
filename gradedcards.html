@@ -231,9 +231,8 @@
       <div class="navbar-links">
         <ul>
           <li><a href="Index.html">Home</a></li>
-          <li><a href="singlecards.html">Single Cards</a></li>
-          <li><a href="gradedcards.html">Graded Cards</a></li>
-          <li><a href="#">Sealed Products</a></li>
+          <li><a href="singlecards.html">Pokemon Singles</a></li>
+          <li><a href="gradedcards.html">Pokemon Graded</a></li>
           <li class="dropdown">
             <a href="#">Other TCG <i class="fas fa-angle-down"></i></a>
             <div class="dropdown-content">
@@ -249,31 +248,22 @@
         <a href="#" class="cart-icon"><i class="fas fa-shopping-basket"></i></a>
         <span class="cart-count">0</span>
       </div>
-      <a class="togglebtn" href="#">
+      <a class="togglebtn">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </a>
     </nav>
     <script>
-      const toggleBtn = document.getElementsByClassName('togglebtn')[0]
-      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-    
+      const toggleBtn = document.querySelector('.togglebtn');
+      const navbarLinks = document.querySelector('.navbar-links');
+  
       toggleBtn.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
-      })
+        navbarLinks.classList.toggle('active');
+      });
     </script>
-
-    <section class="shop-section">
-      <h2 class="shop-title">SHOP BY GRADING COMPANY:</h2>
-      <div class="shop-links">
-        <a class="shop-link" href="#">ACE Graded</a>
-        <a class="shop-link" href="#">PSA Graded</a>
-        <a class="shop-link" href="#">BGS Graded</a>
-        <a class="shop-link" href="#">Others</a>
-      </div>
-    </section>
   </header>
+
 
   <br>
 
@@ -284,11 +274,11 @@
           <img src="Graded/Ace1.jpg" alt="Product 1">
         </div>
         <div class="card-content">
-          <h3 class="card-title">Lugia VMAX Alt Art - ACE 10</h3>
-          <p class="card-description">Set Name #898</p>
+          <h3 class="card-title">Celebi V Alt Art - ACE 10</h3>
+          <p class="card-description">Fusion Strike #245</p>
         </div>
         <div class="card-footer">
-          <span class="price">$19.99</span>
+          <span class="price">£99.99</span>
           <button class="buy-button" type="button"><i class="fas fa-shopping-basket"></i></button>
         </div>
       </div>
@@ -297,8 +287,8 @@
           <img src="Graded/Ace2.jpg" alt="Product 1">
         </div>
         <div class="card-content">
-          <h3 class="card-title">Lugia VMAX Alt Art - ACE 10</h3>
-          <p class="card-description">Set Name #898</p>
+          <h3 class="card-title">Celebi Amazing Rare - ACE 10</h3>
+          <p class="card-description">Vivid Voltage #009</p>
         </div>
         <div class="card-footer">
           <span class="price">$19.99</span>
