@@ -4,10 +4,17 @@
     padding: 20px;
   }
 
+  .body {
+    font-weight: lighter;
+  }
+
+
   .footer-content {
+    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    font-weight: normal;
   }
 
   .footer-section {
@@ -30,6 +37,7 @@
 
   .footer-address {
     color: #ffffff;
+    font-weight: normal !important;
   }
 
   .footer-images {
@@ -103,6 +111,9 @@
     transform: scale(1.1);
   }
 
+  .footer-section .footer-address {
+    font-weight: normal !important;
+  }
   .newsletter-section {
     text-align: center;
     margin-top: 0;
